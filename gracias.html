@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>¡Gracias! · Volver a mí</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;0,900;1,900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--noche:#1a0b2e;--ciruela:#3d1a63;--violeta:#8b3fd9;--brocha:#ffd23f;--display:"Montserrat","Arial Black",system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;font-family:Inter,system-ui,sans-serif;color:#fff;background:radial-gradient(110% 90% at 80% 0%,#7a2fbf 0%,#3d1a63 45%,#1a0b2e 100%)}
+.card{max-width:560px;width:100%;text-align:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:30px;padding:44px 32px;backdrop-filter:blur(8px)}
+.ok{width:76px;height:76px;margin:0 auto 22px;border-radius:22px;display:grid;place-items:center;background:linear-gradient(160deg,#fff,#d9bdf8);box-shadow:0 10px 26px rgba(120,50,200,.4)}
+.ok svg{width:38px;height:38px;stroke:var(--ciruela);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+h1{font:900 clamp(30px,6vw,42px)/1.05 var(--display);margin:0 0 14px;letter-spacing:-.02em}
+.brush{position:relative;display:inline-block;padding:0 .14em;z-index:0;color:#160a24;font-style:italic}
+.brush::before{content:"";position:absolute;inset:.1em -.1em .02em -.1em;background:var(--brocha);transform:rotate(-2deg);border-radius:6px 16px 8px 20px;z-index:-1}
+p{color:#e2d3f5;line-height:1.6;margin:0 0 14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;margin-top:14px;text-decoration:none;background:var(--brocha);color:#160a24;font:800 18px var(--display);border-radius:16px;padding:18px 34px;box-shadow:0 6px 0 #c99a00,0 18px 34px rgba(255,210,63,.3)}
+.steps{text-align:left;margin:26px 0 6px;padding:0;list-style:none;font-size:15px;color:#e2d3f5}
+.steps li{padding:10px 0;border-bottom:1px dashed rgba(255,255,255,.15)}
+small{display:block;margin-top:24px;color:#a998c0;font-size:12.5px}
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="ok"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+  <h1>Ya diste el <span class="brush">primer paso</span></h1>
+  <p>Tu pago fue confirmado. Puedes entrar ahora mismo a tu mini app.</p>
+  <!-- Enlace a la mini app -->
+  <a class="btn" id="appLink" href="https://volver-a-mi-app.vercel.app/">Entrar a Volver a mí</a>
+  <ul class="steps">
+    <li>📩 También te enviamos el enlace por correo. Revisa spam si no lo ves.</li>
+    <li>🔖 Guarda el enlace en un lugar seguro para ti.</li>
+    <li>🛡️ Si compartes tu dispositivo, considera abrirla en modo incógnito.</li>
+  </ul>
+  <small>¿Algún problema con tu acceso o quieres usar la garantía de 7 días? Responde al correo de confirmación.</small>
+</main>
+</body>
+</html>
